@@ -27,7 +27,7 @@ For **Bedrock Brewstand**, all the listed problems above are solved, and more to
 * **Run servers in the background** - already have proof of concept code for this, just needs to be implemented for the project. This makes use of `screen` to launch servers in their own environment that you can hop in and out of.
 * **Automate Commands** - Let your servers touch the outside world! By using pipes you can configure the server to launch commands based on anything thrown at stdin. Some examples include showing twitter posts or teleporting everyone to one spot on the map depending on what time it is.
 
-## System requirements f
+## System requirements
 
 This project does **not** support the windows server or Mojang's windows build. Bedrock Brewstand makes extensive use of Linux features which do not directly exist on windows. To run this on windows, you will need [WSL](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux).
 
