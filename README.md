@@ -21,10 +21,10 @@ For **Bedrock Brewstand**, all the listed problems above are solved, and more to
 
 * **Update manager** - Install or Migrate an existing server to the lastest verison with ease! Brewstand checks the download website and prompts for a download if it's greater than what you have. When installed, all your worlds and configuration files are right where you left them.
 * **Server instances** - create multiple servers that are only 4 kilobytes in size! Each instance is based on properties of a "host" server, with special files like `server.properties` making a copy instead. These "pseudo" servers per-say can all be run at the same time and can even share resources like resource and behavior packs.
+* **Run servers in the background** - With the help of the `screen` command, you don't need to keep a terminal open to run a server! (A.K.A "headless"). Brewstand comes with an easy to use command that launches the server in the background. You can even use that same command to launch many servers at once!
 
 ### Planned features
 
-* **Run servers in the background** - already have proof of concept code for this, just needs to be implemented for the project. This makes use of `screen` to launch servers in their own environment that you can hop in and out of.
 * **Automate Commands** - Let your servers touch the outside world! By using pipes you can configure the server to launch commands based on anything thrown at stdin. Some examples include showing twitter posts or teleporting everyone to one spot on the map depending on what time it is.
 
 ## System requirements
@@ -36,4 +36,4 @@ That being said, it's not impossible to port this over natively, and might work 
 * **OS** - Ubuntu-based Linux distribution (Ubuntu, Lubuntu, Mint, Xubuntu, etc)
 * Python V3 +
 * wget
-* screen (in the future)
+* screen

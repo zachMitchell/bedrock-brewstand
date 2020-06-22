@@ -12,11 +12,7 @@ else
     echo "A new version of the bedrock server is available! Would you like to install it from $updateLink ? (y/N)";
     read -s -n 1 response;
     if [ -n $response ] && [ $response = 'y' ]; then
-        echo 'Sounds good! The download is about to begin. If you have an existing install, the important parts will be kept safe while the new version is downloaded and extracted.\n';
-        if [ -d bedrock ] && [ ! -d bedrock.bak ]; then
-            existingInstall=1
-            mv bedrock bedrock.bak
-        fi
+        echo 'Sounds good! The download is about to begin. If you have an existing install, the important parts will be kept safe while the new version is extracted.\n';
 
         #If the download data exists, ask about extracting it:
         if [ -e downloadData.zip ]; then
@@ -32,6 +28,11 @@ else
 
         if [ -e downloadData.zip ]; then
             echo "Extracting files...";
+            if [ -d bedrock ] && [ ! -d bedrock.bak ]; then
+                existingInstall=1
+                mv bedrock bedrock.bak
+            fi
+            
             mkdir bedrock
             unzip ./downloadData.zip -d bedrock;
 
