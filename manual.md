@@ -4,6 +4,12 @@ Bedrock Brewstand comes with a good portion of commands. If you were to look at 
 
 Keep note that each command is designed to be run within the root folder, in other words the very folder that's holding this code. Running these scripts in another folder might cause problems.
 
+## But first... about worlds
+
+Please take care and use a different world for each virtual server!! If different players on different servers use the same world, the worlds begin to diverge! After closing the servers, there will be a corruption and whatever locations were changed will be completely removed from the map... and that's per-chunk basis! Therefore, please be VERY careful.
+
+The only way you can get away with this kind of situation is when no chunks are loaded on one server and all players stay on one server. If all players then move to the other, progress is saved normally. **Honestly... please don't do this any way you slice it :/**
+
 ## updateServer.sh
 
 This command installs the latest version of bedrock in the same folder bewstand is in. If your installing for the first time, there isn't really anything to worry about other than running the command. If for some reason any part of the installation goes wrong, sometimes a file known as `bedrockVersion.txt` is built pre-maturely, so to re-download the software again just delete this file.
