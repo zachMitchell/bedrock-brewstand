@@ -32,7 +32,7 @@ Your primary command to launch bedrock. When this is run, a `screen` instance is
 
 ### Screen crash course
 
-So what's screen?! Screen is an awesome tool that allows you to have terminals around without having one up on the screen. The terminals themselves are very portable; so much that if you had the terminal on your computer monitor, you could instantly move over to your laptop and have the same instance over there. Screen is good for times when your internet might be spotty but your *really* don't want your command line programs to stop or crash. Overall it's a nice tool! This quick tutorial should help you get started quickly:
+So what's screen?! Screen is an awesome tool that allows you to have terminals around without having one up on your physical display. The terminals themselves are very portable; so much that if you had the terminal on your computer monitor, you could instantly move over to your laptop and have the same instance over there. Screen is good for times when your internet might be spotty but your *really* don't want your command line programs to stop or crash. Overall it's a nice tool! This quick tutorial should help you get started quickly:
 
 * To make your own terminal, run `screen`. you can add `-S myEpicName` to give your terminal a name. Let your terminal run in the background by also adding `-d -m`. For Brew stand you won't need this, but it's here in case you wish to use it for other purposes :)
 * To list your terminals, run `screen -ls`. Brewstand will name your server terminals like this: `bedrock.core` or `bedrock.myServerName`
