@@ -70,7 +70,7 @@ else
             rm downloadData.zip;
 
             echo "Installation complete.";
-            if [ $downloadData ]; then echo 'Anything not moved over has been saved in "bedrock.bak". Please take a look and make sure you have everything before deleting that folder.';
+            if [ $downloadData ]; then echo 'Anything not moved over has been saved in "bedrock.bak". Please take a look and make sure you have everything before deleting that folder.'; fi
             else echo "Hmm... looks like there was an error downloading, sorry about that";
         fi
 
